@@ -7,8 +7,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path="/product/:id" element={<DetailPage />} />
+          <Route path="/React-Exercise/" element={<MainPage />} />
+          <Route path="/React-Exercise/product/:id" element={<DetailPage />} />
         </Routes>
       </BrowserRouter>
     </>
