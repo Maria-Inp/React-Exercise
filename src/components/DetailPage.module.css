@@ -1,0 +1,51 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.productBox {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 3px;
+    padding: 20px 10px;
+    box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.2);
+}
+
+.imgBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgBox img {
+    height: 200px;
+}
+
+.productBox h5 {
+    text-align: center;
+    font-size: 14px;
+}
+
+.productBox p {
+    text-align: center;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .productBox {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .productBox {
+        width: 70%;
+    }
+}

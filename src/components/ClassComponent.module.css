@@ -1,0 +1,131 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.mainTitle {
+    text-align: center;
+    background: -webkit-linear-gradient(180deg, #003C43 100%, #135d66 50%);
+    background-clip: text;
+    -webkit-background-clip: text;    
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+    margin: 20px 0;
+}
+
+.button {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.button button {
+    border: none;
+    outline: none;
+    background: #C4DFDF;
+    color: rgba(0,0,0,0.6);
+    border-radius: 5px;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+.button button:hover {
+    background-color: #E3F4F4;
+}
+
+.productBox {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    padding: 20px 10px;
+    box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.2);
+}
+
+.imgBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.imgBox img {
+    height: 200px;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h5 {
+    font-size: 11px;
+    margin-bottom: 25px;
+}
+
+.comments {
+    width: 85%;
+    border: 2px solid rgba(228, 227, 227, 0.4);
+    padding: 0 15px;
+    border-radius: 3px;
+}
+
+.commentIcon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 40px;
+}
+
+.commentBox {
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.user span {
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.text {
+    margin-top: 10px;
+    font-size: 11px;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .productBox {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .button {
+        width: 85%;
+    }
+
+    .productBox {
+        width: 70%;
+    }
+}

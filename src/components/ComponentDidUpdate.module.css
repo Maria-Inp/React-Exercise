@@ -1,0 +1,107 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 100px 0;
+}
+
+.mainTitle {
+    text-align: center;
+    background: -webkit-linear-gradient(180deg, #003C43 100%, #135d66 50%);
+    background-clip: text;
+    -webkit-background-clip: text;    
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+    margin: 40px 0;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.button button {
+    border: none;
+    outline: none;
+    background: #C4DFDF;
+    color: rgba(0,0,0,0.6);
+    border-radius: 5px;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+.button button:hover {
+    background-color: #E3F4F4;
+}
+
+.productBox {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 3px;
+    padding: 20px 10px;
+    box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.2);
+}
+
+.productID {
+    font-size: 15px;
+    font-weight: 500;
+    color: #135D66;
+}
+
+.imgBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgBox img {
+    height: 200px;
+}
+
+.productBox h5 {
+    text-align: center;
+    font-size: 14px;
+}
+
+.productBox p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.productBox .more {
+    border: none;
+    outline: none;
+    background-color: white;
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+    border-radius: 5px;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    box-shadow: inset 0px 0px 2px 1px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.productBox .more:hover {
+    background-color: #F8F6F4;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .productBox {
+        width: 80%;
+    }
+}

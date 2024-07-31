@@ -1,0 +1,100 @@
+.title {
+    margin-top: 15px;
+    text-align: center;
+    background: -webkit-linear-gradient(180deg, #003C43 100%, #135d66 50%);
+    background-clip: text;
+    -webkit-background-clip: text;    
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    background-color: #F8F8F8;
+}
+
+.allBox {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 3px;
+    padding: 10px 2px;
+    background-color: #FFFFFF;
+}
+
+.box .flowerPic {
+    width: 150px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.flowerPic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.plantName h5 {
+    font-size: 13px;
+    text-align: center;
+}
+
+.plantDesc p {
+    font-size: 11px;
+    padding: 5px;
+    text-align: center;
+}
+
+.flowerTable, .flowerTable th, .flowerTable td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.flowerTable th, .flowerTable td {
+    background-color: #F3F1F5;
+}
+
+.flowerTable {
+    width: 90%;
+}
+
+.flowerTable th {
+    font-size: 9px;
+    text-align: start;
+    padding-left: 4px;
+}
+
+.flowerTable td {
+    font-size: 11px;
+    text-align: center;
+    padding: 5px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .allBox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .allBox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
