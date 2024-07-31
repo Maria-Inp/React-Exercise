@@ -34,7 +34,7 @@ function ComponentDidUpdate({ allProducts, product, setProduct }) {
         <h5>{product.title}</h5>
         <p>{product.description}</p>
 
-        <Link className={styles.more} to={`/product/${product.id}`}>More information</Link>
+        <Link className={styles.more} to={`/React-Exercise/product/${product.id}`}>More information</Link>
       </div>
     </div>
   );
